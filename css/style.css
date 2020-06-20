@@ -1,0 +1,149 @@
+html{
+    box-sizing:border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.fontElement {
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+    font-size: 20px;
+    
+}
+
+.listItem{
+    list-style-type: none;
+    padding: 10px;
+    margin-left: 0px;
+    border:2px;
+    border-radius:10px;
+    background-color:rgb(62, 172, 62) ;
+}
+
+.unorderedList{
+    padding-left: 0px;
+    padding-bottom: 15px;
+    line-height: 1.2;
+    border-bottom: 1px solid rgb(62, 172, 62);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.hFontSize{
+    font-size: 20px
+}
+
+.pageSize{
+    width:100%;
+}
+
+.center {
+        padding: 10px;
+        margin: 0px auto;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.bgbody {
+    background-color: #ddd;
+    
+}
+
+.container{
+    overflow-x:auto;
+    margin: 0px auto;
+}
+
+.table{
+    font-family: "Lato", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    display:none;
+}
+
+.tableCell {
+    border: 2px solid;
+    text-align: center;
+    padding: 20px;
+}
+
+.section1 {
+    padding-top:10px;
+}
+
+.tableHeader{
+    background-color: rgb(62, 172, 62);
+    color:white;
+    border-color:black;
+}
+
+.tableHeader:hover{
+    background-color: rgb(42, 114, 42);
+}
+
+.tableRow:nth-child(even){
+    background-color: rgb(197, 196, 196);
+}
+
+.tableRow:hover{
+    background-color: rgb(165, 164, 164);
+}
+
+.caption{
+    margin-bottom:20px;
+    font-weight: bold;
+}
+
+.button1{
+    background-color:rgb(62, 172, 62);
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.footer{
+    background-color: rgb(62, 172, 62);
+    color: white;
+    font-weight: bold;
+    margin-top:50px;
+    padding: 10px;
+    font-size:15px;
+    text-align:center;
+    box-shadow: 5px -5px 30px 0px rgb(146, 70, 128);
+
+}
+
+.link {
+    text-decoration: none;
+    color: blue;
+}
+
+.link:visited {
+    color: blueviolet;
+}
+
+.link:focus{
+    outline: 2px solid black;
+}
+
+.link:hover{
+    color: crimson;
+    outline: none;
+    border-bottom: 1px solid;
+}
+
+.link:active{
+    color: magenta;
+}
+
+.header1 {
+    color: rgb(62, 172, 62);
+    font-size: 40px;
+    
+}
