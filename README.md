@@ -3,9 +3,9 @@ First repository on GitHub of my first ever Frontend project. Project shows my h
 
 *Kursywa*
 
-## Links:
+## DEMO:
 
-[Google](https://google.com) 
+[Demo page](https://szpytmus.github.io/homepage/) 
 
 ### Wstawianie obrazów
 ![Alternatywny tekst](link do obrazka)
