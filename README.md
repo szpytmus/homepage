@@ -18,4 +18,8 @@ Fragment kodu `console.log(5)`
 
 ```javascript
 let myNumber = 5;
+<<<<<<< HEAD
 console.log(myNumber)```
+=======
+console.log(myNumber)```
+>>>>>>> 0e5d8221fb793625fbaa0c8d4d201aa19eea8041
