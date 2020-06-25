@@ -7,8 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image og:image:width=500px og:image:height=500px"  content="images/sample.png">
     <title>My Frontpage</title>
-    <link rel="icon" href="images/bat.png">
-    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="images/home.png">
+    <link href="css/container.css" rel="stylesheet" />
+    <link href="css/general.css" rel="stylesheet" />
+    <link href="css/list.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/section.css" rel="stylesheet" />
+    <link href="css/button.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/table.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
@@ -16,28 +23,28 @@
 
 </head>
 
-<body class="bgbody fontElement pageSize center">
+<body class="body">
 
 <div class="container">
     
     <nav>
-        <ul class="unorderedList">
-            <li class="listItem"><a class="link" href="#aboutMe">O mnie</a></li>
-            <li class="listItem"><a class="link" href="#interests">Zainteresowania</a></li>
-            <li class="listItem"><a class="link" href="#moreInterests">Zainteresowania - więcej szczegółów</a></li>
-            <li class="listItem"><a class="link" href="#journeys">Podróże</a></li>
+        <ul class="list">
+            <li class="list__item"><a class="link" href="#aboutMe">O mnie</a></li>
+            <li class="list__item"><a class="link" href="#interests">Zainteresowania</a></li>
+            <li class="list__item"><a class="link" href="#moreInterests">Zainteresowania - więcej szczegółów</a></li>
+            <li class="list__item"><a class="link" href="#journeys">Podróże</a></li>
         </ul>
     </nav>
 
     <main>
         <header>
-            <h1 class="header1 centerText"> Cześć!</h1>
+            <h1 class="header"> Cześć!</h1>
         </header>
     
 
-        <section id="aboutMe" class="section1">
-        <h2 class="header2">Nazywam się Marcin!</h2>
         
+        <h2 class="header__second">Nazywam się Marcin!</h2>
+        <section id="aboutMe" class="section"></section>
             <p>Obecnie jestem członkiem Szkoły Doktorskiej AGH na kierunku Nauki Fizyczne. Specjalizuję się w magnetyzmie
                 <em>nanostruktur</em> powierzchniowych. Moja praca obejmuje wytwarzanie oraz charakterystykę właściwości
                 magnetycznych nowej generacji materiałów i złącz do zastosowań w spintronice, czyli elektronice nowej
@@ -46,7 +53,7 @@
             </p>
         </section>
     
-        <h3 class="headSize"> Moje zainteresowania </h3>
+        <h3 class="header__universal"> Moje zainteresowania </h3>
         <section id="interests">
             <ul>Moje główne zainteresowania to:
                 <li>Muzyka</li>
@@ -65,7 +72,7 @@
             </ul>
         </section>
     
-        <h4 class="hFontSize">Więcej o zainteresowaniach</h4>
+        <h4 class="header__universal">Więcej o zainteresowaniach</h4>
     
         <section id="moreInterests">
             <p>
@@ -75,43 +82,43 @@
                 tabelę moich ulubionych albumów muzycznych, filmów oraz gier z kilku ostatnich lat.
             </p>
     
-            <div class="container">
+            <div>
                 <table class="table">
                 <caption class="caption">Mój ulubiony album, film, gra roku:</caption>
-                <tr class="tableRow">
-                    <th class="tableCell tableHeader" scope="col">Rok</th>
-                    <th class="tableCell tableHeader" scope="col">Album</th>
-                    <th class="tableCell tableHeader" scope="col">Film</th>
-                    <th class="tableCell tableHeader" scope="col">Gra</th>
+                <tr class="table__row">
+                    <th class="table__cell table__header" scope="col">Rok</th>
+                    <th class="table__cell table__header" scope="col">Album</th>
+                    <th class="table__cell table__header" scope="col">Film</th>
+                    <th class="table__cell table__header" scope="col">Gra</th>
                 </tr>
-                <tr class="tableRow">
-                    <th class="tableCell tableHeader" scope="row">2019</th>
-                    <td class="tableCell">We Are Not Your Kind - Slipknot</td>
-                    <td class="tableCell">1917</td>
-                    <td class="tableCell">World of Warcraft Classic</td>
+                <tr class="table__row">
+                    <th class="table__cell table__header" scope="row">2019</th>
+                    <td class="table__cell">We Are Not Your Kind - Slipknot</td>
+                    <td class="table__cell">1917</td>
+                    <td class="table__cell">World of Warcraft Classic</td>
                 </tr>
-                <tr class="tableRow">
-                    <th class="tableCell tableHeader" scope="row">2018</th>
-                    <td class="tableCell">Firepower - Judas Priest</td>
-                    <td class="tableCell">Dziedzictwo. Hereditary</td>
-                    <td class="tableCell">God of War</td>
+                <tr class="table__row">
+                    <th class="table__cell table__header" scope="row">2018</th>
+                    <td class="table__cell">Firepower - Judas Priest</td>
+                    <td class="table__cell">Dziedzictwo. Hereditary</td>
+                    <td class="table__cell">God of War</td>
                 </tr>
-                <tr class="tableRow">
-                    <th class="tableCell tableHeader" scope="row">2017</th>
-                    <td class="tableCell">Infinite - Deep Purple</td>
-                    <td class="tableCell">Dunkierka</td>
-                    <td class="tableCell">Resident Evil 7</td>
+                <tr class="table__row">
+                    <th class="table__cell table__header" scope="row">2017</th>
+                    <td class="table__cell">Infinite - Deep Purple</td>
+                    <td class="table__cell">Dunkierka</td>
+                    <td class="table__cell">Resident Evil 7</td>
                 </tr>
-                <tr class="tableRow">
-                    <th class="tableCell tableHeader" scope="row">2016</th>
-                    <td class="tableCell">Wilczy Humor - Bisz/Radex</td>
-                    <td class="tableCell">Nienawistna Ósemka</td>
-                    <td class="tableCell">Battlefield 1</td>
+                <tr class="table__row">
+                    <th class="table__cell table__header" scope="row">2016</th>
+                    <td class="table__cell">Wilczy Humor - Bisz/Radex</td>
+                    <td class="table__cell">Nienawistna Ósemka</td>
+                    <td class="table__cell">Battlefield 1</td>
                 </tr>
             </table></div>
         </section>
     
-        <h5 class="hFontSize">Krótko o podróżach</h5>
+        <h5 class="header__universal">Krótko o podróżach</h5>
         <section id="journeys">
             Uwielbiam zwiedzać świat! Celem mojej ostatniej zagranicznej podróży była Lizbona. Piękno portugalskiej
             architektury w zderzeniu ze współczesnością. Jednak moje ulubione miejsce to Bieszczady. Setki kilometrów
@@ -120,7 +127,7 @@
     
         </section>
     
-        <button class="button1" onclick="changeImage()">Pokaż zdjęcia</button>
+        <button class="button" onclick="changeImage()">Pokaż zdjęcia</button>
     
         <img id="Bieszczady1" width="500px" height="500px" 
             src="https://s3.viva.pl/styl-zycia/dom/bieszczady-513254-GALLERY_BIG.jpg"
@@ -135,27 +142,6 @@
             
     </main>
 
-    <!--Formluarze-->
-    <form>
-        <div class="form">
-            <p>
-                <!--Lub inaczej
-                <label for="name"> Imię i nazwisko </label>
-                <input id="name" name="name" placeholder="Wpisz imię i nazwisko" autofocus>
-                -->
-                <label>
-                    Imię i nazwisko: <input name="name" placeholder="Wpisz imię i nazwisko" autofocus>
-                </label>
-            </p>
-            <p>
-                <!--lub inaczej
-                <input type = "submit" value="Wyślij">
-                -->
-                <button>Wyślij</button>
-                <button type="reset">Wyczyść formularz</button>
-            </p>
-        </div>
-    </form>
 
     <footer class="footer">Dobrze się bawię, ucząc się frontendu!</footer>
 </div>

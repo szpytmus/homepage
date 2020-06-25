@@ -1,25 +1,26 @@
 # First Project Ever - homepage
-First repository on GitHub of my first ever Frontend project. Project shows my homepage with a few facts about me and my life.
+This is my first Front-End project. My homepage. A few words about my person and my interests. This page is the start of my programming journey. The page is not perfect, but it indicates that I have started from scratch.
 
-*Kursywa*
-
-## DEMO:
+## Demo:
 
 [Demo page](https://szpytmus.github.io/homepage/) 
 
-### Wstawianie obrazów
-![Alternatywny tekst](link do obrazka)
 
-1. First list element
-1. Second list element
+### Used technologies
+
+1. HTML
+1. CSS
+1. Javascript
 
 
-Fragment kodu `console.log(5)`
+### Exemplary JS function
 
-```javascript
-let myNumber = 5;
-<<<<<<< HEAD
-console.log(myNumber)```
-=======
-console.log(myNumber)```
->>>>>>> 0e5d8221fb793625fbaa0c8d4d201aa19eea8041
+```javascript 
+function changeImage()
+{
+imageId = document.getElementById("Bieszczady1")
+photoIndex = photoIndex === (photoUrls.length -1) ? 0: photoIndex +1;
+imageId.src = photoUrls[photoIndex];
+}
+
+```

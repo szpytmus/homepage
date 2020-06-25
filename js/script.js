@@ -1,15 +1,15 @@
 console.log("Porzućcie nadzieję wszyscy, którzy tu wchodzicie")
 
-let button1 = document.querySelector(".button1");
+let button = document.querySelector(".button");
 let imageId = document.getElementById("Bieszczady1");
 
-console.log(button1)
+console.log(button)
 
 
-button1.addEventListener("click", () => {
+button.addEventListener("click", () => {
 
-    if(button1.innerText === "Pokaż zdjęcia"){
-        button1.innerText = "Pokaż kolejne";
+    if(button.innerText === "Pokaż zdjęcia"){
+        button.innerText = "Pokaż kolejne";
     }
   
 });
@@ -27,6 +27,6 @@ imageId.src = photoUrls[photoIndex];
 }
 
 
-button1.addEventListener("click", () => {
+button.addEventListener("click", () => {
     document.getElementById("Bieszczady1").style.display="block";
 });
